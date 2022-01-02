@@ -1,0 +1,45 @@
+/* #check_menu:not(:checked) ~ .tex_ocm{
+    animation: hide_ocm 1.5s linear;
+}
+@keyframes hide_ocm{
+    0%{
+        position: fixed;
+        right: 2%;
+        opacity: 1;
+    }
+    95%{
+        position: fixed;
+        right: 2%;
+        opacity: 1;
+    }
+    100%{
+        position: fixed;
+        right: 2%;
+        opacity: 0;
+    }
+} */
+
+/* Site */
+.container{
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 0;
+    text-align: center;
+    font-size: 3vh;
+    font-family: monospace;
+    color: #dad2e2;
+    text-shadow: -1px 1px #caa8ec;
+}
+p{
+    margin-bottom: 3px;
+}
+
+/* Change with device size */
+@media (max-width: 600px){
+    .container{
+        top: 27%;
+        font-size: 2vh;
+        text-shadow: none;
+    }
+}

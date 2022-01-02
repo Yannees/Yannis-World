@@ -1,0 +1,75 @@
+/* Assign animation */
+.tex_ocm .bar1{
+    animation: move_bar1 0.4s linear;
+}
+.tex_ocm .bar2{
+    animation: move_bar2 0.4s linear;
+}
+.tex_ocm .bar3{
+    animation: move_bar3 0.4s linear;
+}
+.menu ul{
+    animation: hide_ul 0.4s linear;
+}
+.menu .menu_bg #block_1{
+    animation: move_block1 0.75s linear;
+}
+.menu .menu_bg #block_2{
+    animation: move_block2 1s linear;
+}
+.menu .menu_bg #block_3{
+    animation: move_block3 1.25s linear;
+}
+.menu .menu_bg #block_4{
+    animation: move_block4 1.5s linear;
+}
+
+/* Animations */
+@keyframes move_bar1{
+    from{transform: rotate(-45deg) translate(-9px, 6px);}
+    to{transform: none;}
+}
+@keyframes move_bar2{
+    from{
+        transform: translateX(10vh);
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes move_bar3{
+    from{transform: rotate(45deg) translate(-8px, -8px);}
+    to{transform: none;}
+}
+@keyframes hide_ul{
+    from{
+        visibility: visible;
+        opacity: 1;
+    }
+    to{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+@keyframes move_block1{
+    0%{top: 100%;}
+    66.66666%{top: 100%;}
+    100%{top: 0;}
+}
+@keyframes move_block2{
+    0%{top: 100%;}
+    75%{top: 100%;}
+    100%{top: 0;}
+}
+@keyframes move_block3{
+    0%{top: 100%;}
+    80%{top: 100%;}
+    100%{top: 0;}
+}
+@keyframes move_block4{
+    0%{top: 100%;}
+    83.33333%{top: 100%;}
+    100%{top: 0;}
+}

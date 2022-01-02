@@ -1,0 +1,18 @@
+.tex_ocm{
+    animation: hide_ocm 1.5s linear;
+}
+
+@keyframes hide_ocm{
+    0%{
+        right: 2%;
+        opacity: 1;
+    }
+    95%{
+        right: 2%;
+        opacity: 1;
+    }
+    100%{
+        right: 2%;
+        opacity: 0;
+    }
+}
