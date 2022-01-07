@@ -76,7 +76,8 @@ html, body {
     list-style-type: none;
 }
 .menu ul li a{
-    font-family: monospace;
+    font-family: "Dm Mono", monospace;
+    font-weight: 300;
     text-decoration: none;
     color: #644777;
     transition: all 0.25s linear;
@@ -84,7 +85,7 @@ html, body {
     text-shadow: 0px 1px #4e385d;
 }
 .menu ul li a:hover{
-    text-shadow: 0px 1px #d499ff, 0px -1px #4e385d;
+    text-shadow: 0px 3px #d499ff, 0px -3px #4e385d;
     color: #644777;
 }
 

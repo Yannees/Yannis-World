@@ -1,5 +1,5 @@
 /* General */
-body{
+html, body{
     overflow: hidden;
 }
 #change{
@@ -53,7 +53,7 @@ body{
     top:50%;
     transform: translateY(-50%);
     color: #000a11;
-    font-family: Futura, monaco, monospace;
+    font-family: "Dm Mono", monospace;
     font-size: 4vh;
     visibility: hidden;
     opacity: 0;
@@ -68,8 +68,8 @@ body{
     right: 15%;
     top:50%;
     transform: translateY(-50%);
-    font-family: monospace;
-    font-weight: bold;
+    font-family: "Dm Mono", monospace;
+    font-weight: 500;
     font-size: 7vh;
     display: none;
     visibility: hidden;
@@ -86,20 +86,6 @@ body{
     animation:  
         type calc(var(--n)*.1s) steps(var(--n)) forwards;
     animation-delay: 1.5s;
-}
-#its_me{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -105%;
-    transition: all 1s linear;
-    height: 20vh;
-    width: 20vh;
-    border-radius: 50%;
-    background-image: url("pictures/its a me.gif");
-    background-size: 110%;
-    background-position: 0% 35%;
-    border: solid 0.25vh #000a11;
 }
 /* Change */
 #change:checked ~ #to_main{
@@ -127,9 +113,6 @@ body{
     left: 1%;
     transition: all 1s linear;
 }
-#change:checked ~ #its_me{
-    right: 5%;
-}
 
 /* Animations */
 @keyframes move_old_bg{
@@ -153,18 +136,6 @@ body{
 @media (max-width: 525px){
     .container{
         font-size: 4.5vh;
-        top: 40%;
-    }
-    #its_me{
-        height: 15vh;
-        width: 15vh;
-        top: auto;
-        left: 150%;
-        bottom: 27.5%;
-    }
-    #change:checked ~ #its_me{
-        left: 50%;
-        transform: translateX(-50%);
     }
 }
 @media (max-width: 1250px){
