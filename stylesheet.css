@@ -80,7 +80,7 @@ html, body{
         linear-gradient(-90deg,#000a11 5px,#00000000 0) 10px 0,
         linear-gradient(#000a11 0 0) 0 0;
     background-size:calc(var(--n)*1ch) 200%;
-    -webkit-background-clip:padding-box,text;
+/*     -webkit-background-clip:padding-box,text; */
     background-clip:padding-box,text;
     background-repeat:no-repeat;
     animation:  
