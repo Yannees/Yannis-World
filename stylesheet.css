@@ -73,9 +73,9 @@ html, body{
     font-size: 7vh;
     display: none;
     visibility: hidden;
+    -webkit-box-decoration-break: clone;
 }
 .text{
-    display: inline;
     color: #00000000;
     background:
         linear-gradient(-90deg, #000a11 5px, #00000000 0) 10px 0,
@@ -87,6 +87,7 @@ html, body{
     animation: type calc(var(--n)*.1s) steps(var(--n)) forwards;
     animation-delay: 1.5s;
 }
+
 /* Change */
 #change:checked ~ #to_main{
     left: -100%;
