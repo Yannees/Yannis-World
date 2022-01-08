@@ -77,10 +77,10 @@ html, body{
 .text{
     color: rgba(0, 0, 0, 0);
     background:
-        linear-gradient(-90deg, #000a11 5px, rgba(0, 0, 0, 0) 0) 10px 0,
-        linear-gradient(#000a11 0 0) 0 0;
+        linear-gradient(-90deg, #000a11 5px, rgba(0, 0, 0, 0) 0px) 10px 0px,
+        linear-gradient(#000a11 0px 0px) 0px 0px;
     background-size: calc(var(--n)*1ch) 200%;
-    -webkit-background-clip: padding-box,text;
+    -webkit-background-clip: padding-box, text;
     background-clip: padding-box, text;
     background-repeat: no-repeat;
     animation: type calc(var(--n)*.1s) steps(var(--n)) forwards;
