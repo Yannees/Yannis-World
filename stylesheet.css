@@ -75,6 +75,7 @@ html, body{
     visibility: hidden;
 }
 .text{
+    display: inline;
     color: #00000000;
     background:
         linear-gradient(-90deg, #000a11 5px, #00000000 0) 10px 0,
@@ -85,7 +86,6 @@ html, body{
     background-repeat: no-repeat;
     animation: type calc(var(--n)*.1s) steps(var(--n)) forwards;
     animation-delay: 1.5s;
-    -webkit-box-decoration-break: clone;
 }
 /* Change */
 #change:checked ~ #to_main{
