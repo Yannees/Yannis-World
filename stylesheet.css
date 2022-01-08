@@ -77,7 +77,7 @@ html, body{
 .text{
     color:#00000000;
     background:
-        linear-gradient(-90deg, #000a11 5px, #00000000 0) 10px 0,
+        linear-gradient(-90deg, #000a11 5px, transparent 0) 10px 0,
         linear-gradient(#000a11 0 0) 0 0;
     background-size: calc(var(--n)*1ch) 200%;
     -webkit-background-clip: padding-box,text;

@@ -1,0 +1,54 @@
+/* Body */
+html, body {
+    background-color: #000a11;
+    font-family: "Dm Mono", monospace;
+    font-weight: 300;
+    color: #dad2e2;
+    text-shadow: -1px 1px #caa8ec;
+    
+    scrollbar-width: thin;
+    scrollbar-color: #6d6d6d #000a11;
+}
+body::-webkit-scrollbar {
+    width: 11px;
+}
+body::-webkit-scrollbar-track {
+    background: #000a11;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #6d6d6d;
+    border-radius: 6px;
+    border: 3px solid #000a11;
+}
+
+/* Site */
+#top_bar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 15%;
+    width: 100%;
+    border-bottom-left-radius: 100%;
+    background: #a45ee6;
+}
+h1{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    color: #dad2e2;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
+    font-size: 10vh;
+    font-family: "Dm Mono", monospace;
+    font-weight: 500;
+    text-decoration: underline #a45ee6;
+    text-shadow: -2px 2px #caa8ec;
+    letter-spacing: 1vw;
+    transition: all 0.2s;
+}
+
+/* Change with device size */
+@media (max-width: 600px){
+    h1{font-size: 6vh;}
+}
