@@ -1,0 +1,29 @@
+.menu ul{
+    position: fixed;
+}
+/* site */
+#its_me{
+    position: absolute;
+    top: 17%;
+    right: 15%;
+    height: 25%;
+    border-radius: 50px;
+}
+.content{
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 0;
+}
+#tbc{
+    position: relative;
+    list-style-type: none;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    font-size: 3vh;
+    border-spacing: 100px 8px;
+}
+th{
+    padding-top: 2.5%;
+    text-decoration: underline #a45ee6 3px;
+}

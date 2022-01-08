@@ -80,9 +80,9 @@ html, body {
     font-weight: 300;
     text-decoration: none;
     color: #644777;
-    transition: all 0.25s linear;
+    transition: all 0.15s linear;
     font-size: 7vh;
-    text-shadow: 0px 1px #4e385d;
+    text-shadow: 0px 3px #4e385d, 0px -3px #d499ff;
 }
 .menu ul li a:hover{
     text-shadow: 0px 3px #d499ff, 0px -3px #4e385d;

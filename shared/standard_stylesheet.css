@@ -1,6 +1,13 @@
 /* Body */
-body {
+html, body {
     background-color: #000a11;
+    font-family: "Dm Mono", monospace;
+    font-weight: 300;
+    color: #dad2e2;
+    text-shadow: -1px 1px #caa8ec;
+    
+    scrollbar-width: thin;
+    scrollbar-color: #6d6d6d #000a11;
 }
 body::-webkit-scrollbar {
     width: 11px;
