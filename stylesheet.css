@@ -75,11 +75,11 @@ html, body{
     visibility: hidden;
 }
 .text{
-    color: rgba(0, 0, 0, 0);
+    color: #00000000;
     background:
-        linear-gradient(-90deg, #000a11 5px, rgba(0, 0, 0, 0) 0px) 10px 0px,
-        linear-gradient(#000a11 0px 0px) 0px 0px;
-    background-size: calc(var(--n)*1ch) 200%;
+        linear-gradient(-90deg, #000a11 5px, #00000000 0) 10px 0,
+        linear-gradient(#000a11 0 0) 0 0;
+    background-size: calc(var(--n)*1ch) 100%;
     -webkit-background-clip: padding-box, text;
     background-clip: padding-box, text;
     background-repeat: no-repeat;
@@ -128,7 +128,8 @@ html, body{
     100%{visibility: visible;}
 }
 @keyframes type{
-    from {background-size:0 200%}
+    from {background-size:0}
+    to{background-size: 100%;}
 }
 
 /* Change with device size */
