@@ -67,6 +67,7 @@ html, body {
     top: 50%;
     transform: translateY(-50%);
     left: 5%;
+    margin-right: 15%;
     visibility: hidden;
     opacity: 0;
     transition: all 0.4s linear;
@@ -86,7 +87,6 @@ html, body {
 }
 .menu ul li a:hover{
     text-shadow: 0px 3px #d499ff, 0px -3px #4e385d;
-    color: #644777;
 }
 
 /* Change menu */
@@ -153,5 +153,9 @@ html, body {
 @media (max-width: 525px){
     .menu ul li a{
         font-size: 4.5vh;
+        text-shadow: 0px 2px #4e385d, 0px -2px #d499ff;
+    }
+    .menu ul li a:hover{
+        text-shadow: 0px 2px #d499ff, 0px -2px #4e385d;
     }
 }
