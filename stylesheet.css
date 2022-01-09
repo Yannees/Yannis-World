@@ -152,7 +152,7 @@ html, body{
         font-family: "Dm Mono", monospace;
         font-weight: 500;
         font-size: 7vh;
-        display: inline;
+        display: unset;
         visibility: visible;
         transition: all 1s linear;
     }
