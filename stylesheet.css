@@ -147,6 +147,7 @@ html, body{
     .container{
         position: absolute;
         left: 109%;
+        right: 0;
         top:50%;
         transform: translateY(-50%);
         font-family: "Dm Mono", monospace;
@@ -155,6 +156,7 @@ html, body{
         display: inline;
         visibility: visible;
         transition: all 1s linear;
+        animation-delay: none;
     }
     .text{
         color: #000a11;
