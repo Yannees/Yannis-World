@@ -19,7 +19,7 @@ html, body{
 }
 #to_main{
     position: absolute;
-    margin-right: 20%;
+    right: 20%;
     left: 15%;
     top:50%;
     transform: translateY(-50%);
@@ -88,9 +88,8 @@ html, body{
 }
 /* Change */
 #change:checked ~ #to_main{
-    left: -100%;
-    opacity: 0;
-    visibility: hidden;
+    left: -85%;
+    right: 120%;
     transition: all 1s linear;
 }
 #change:checked ~ #background{
@@ -145,14 +144,14 @@ html, body{
 @supports (-webkit-touch-callout: none) {
     .container{
         position: absolute;
-        left: 9%;
-        right: 15%;
+        left: 109%;
+        margin-right: -100%;
         top:50%;
         transform: translateY(-50%);
         font-family: "Dm Mono", monospace;
         font-weight: 500;
         font-size: 7vh;
-        display: none;
+        display: unset;
         visibility: visible;
         transition: all 1s linear;
     }
@@ -162,15 +161,11 @@ html, body{
         animation: none;
     }
     #change:checked ~ .container{
-        display: unset;
-        animation: mt 1s linear;
+        left: 9%;
+        margin-right: 15%;
+        animation: none;
     }
 }
-@keyframes mt{
-    from{left: 109%;}
-    to{left: 9%;}
-}
-
 /* Extra menu */
 #oc_menu{
     display: none;
