@@ -118,4 +118,7 @@
     html, body{
         text-shadow: none;
     }
+    .container .resume a{
+        border: solid 2px #caa8ec;
+    }
 }
