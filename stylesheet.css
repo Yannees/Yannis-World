@@ -128,8 +128,7 @@ html, body{
     100%{visibility: visible;}
 }
 @keyframes type{
-    from {background-size:0}
-    to{background-size: 100%;}
+    from {background-size:0 100%}
 }
 
 /* Change with device size */
@@ -156,7 +155,6 @@ html, body{
         display: inline;
         visibility: visible;
         transition: all 1s linear;
-        animation-delay: unset;
     }
     .text{
         color: #000a11;
@@ -166,6 +164,7 @@ html, body{
     #change:checked ~ .container{
         left: 9%;
         right: 15%;
+        animation: none;
     }
 }
 
