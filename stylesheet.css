@@ -156,7 +156,7 @@ html, body{
         display: inline;
         visibility: visible;
         transition: all 1s linear;
-        animation-delay: none;
+        animation-delay: unset;
     }
     .text{
         color: #000a11;
