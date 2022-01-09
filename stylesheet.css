@@ -145,14 +145,14 @@ html, body{
 @supports (-webkit-touch-callout: none) {
     .container{
         position: absolute;
-        left: 109%;
-        right: 0;
+        left: 9%;
+        right: 15%;
         top:50%;
         transform: translateY(-50%);
         font-family: "Dm Mono", monospace;
         font-weight: 500;
         font-size: 7vh;
-        display: unset;
+        display: none;
         visibility: visible;
         transition: all 1s linear;
     }
@@ -162,10 +162,13 @@ html, body{
         animation: none;
     }
     #change:checked ~ .container{
-        left: 9%;
-        right: 15%;
-        animation: none;
+        display: unset;
+        animation: mt 1s linear;
     }
+}
+@keyframes mt{
+    from{left: 109%;}
+    to{left: 9%;}
 }
 
 /* Extra menu */
