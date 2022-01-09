@@ -81,29 +81,40 @@
 }
 
 /* Change with device size */
-@media (max-width: 600px){
+@media(max-width: 605px){
     .container{
         top: 27%;
-        font-size: 1vh;
         text-shadow: none;
+    }
+    .container p{
+        font-size: 2vh;
     }
     .container .resume p{
         display: block;
         margin-bottom: 3%;
     }
     .resume p::after{
-        content: "\00A0\2BAF";
+        position: relative;
+        content: "\00A0\21B4";
+        font-size: 5vh;
+        top: 10px;
+        left: -5px;
     }
     .container .resume a{
         left: 0;
     }
 }
-@media (max-width: 900px){
+@media(max-width: 900px){
     #its_me{
         height: 10vh;
         width: 10vh;
         left: 50%;
         transform: translateX(-50%);
         top: 7%;
+    }
+}
+@media(max-height: 650px) and (orientation: landscape){
+    html, body{
+        text-shadow: none;
     }
 }
