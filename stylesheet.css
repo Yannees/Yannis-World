@@ -19,7 +19,7 @@ html, body{
 }
 #to_main{
     position: absolute;
-    right: 20%;
+    margin-right: 20%;
     left: 15%;
     top:50%;
     transform: translateY(-50%);
@@ -89,7 +89,7 @@ html, body{
 /* Change */
 #change:checked ~ #to_main{
     left: -85%;
-    right: 120%;
+    margin-right: 120%;
     transition: all 1s linear;
 }
 #change:checked ~ #background{
