@@ -1,22 +1,55 @@
+/* some extra things */
+#check_menu:not(:checked) ~ .tex_ocm{
+    animation: hide_ocm 1.5s linear;
+}
+@keyframes hide_ocm{
+    0%{
+        position: fixed;
+        right: 2%;
+        opacity: 1;
+    }
+    95%{
+        position: fixed;
+        right: 2%;
+        opacity: 1;
+    }
+    100%{
+        position: fixed;
+        right: 2%;
+        opacity: 0;
+    }
+}
 .menu ul{
     position: fixed;
 }
+
 /* site */
-#its_me{
+.picture{
     position: absolute;
     top: 17%;
     right: 15%;
     height: 25%;
     border-radius: 50px;
 }
-.content{
-    position: absolute;
-    width: 100%;
-    top: 40%;
-    left: 0;
+#its_me{
+    height: 100%;
+    border-radius: 50px;
 }
-
+#license{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s linear;
+}
+.picture:hover #license{
+    visibility: visible;
+    opacity: 1;
+}
 table{
+    text-align: left;
     position: relative;
     list-style-type: none;
     margin-left: 5%;
@@ -28,25 +61,22 @@ table{
     width: 90%;
     table-layout: fixed;
 }
-
 table tr{
     padding: .35em;
 }
-
 table th,table td{
     padding: .625em;
 }
-
 table th{
     letter-spacing: .1em;
     padding-top: 2.5%;
     text-decoration: underline #a45ee6 3px;
 }
 
-@media(max-width: 600px){
-    .content{
-        top: 27%;
-        text-shadow: none;
+/* media-queries */
+@media(max-width: 870px){
+    h1{
+        font-size: 7.5vh;
     }
     #its_me{
         position: absolute;
@@ -74,12 +104,24 @@ table th{
         font-size: .8em;
     }
 }
-@media(max-width: 1350px){
-    #its_me{
-        height: 15%;
+@media(max-aspect-ratio: 7/4){
+    .picture{
+        position: absolute;
+        top: 2.5%;
+        height: 15.5%;
         left: 50%;
-        border-radius: 25px;
         transform: translateX(-50%);
-        top: 7%;
+    }
+    #its_me{
+        position: absolute;
+        height: 100%;
+        border-radius: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media(max-height: 650px) and (orientation: landscape){
+    html, body{
+        text-shadow: none;
     }
 }

@@ -37,5 +37,23 @@
     <!-- Site -->
     <span id="top_bar"></span>
     <h1>Kontaktiere mich</h1>
+    <div class="container">
+        <form action="mailto:grimsel.yannis@gmail.com" method="GET" target="_blank">
+            <h2>Kontaktiere mich zu grimsel.yannis@gmail.com</h2>
+            <div>
+                <label>
+                    Betreff:
+                    <input name="subject" type="text" id="subject" placeholder="Thema">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Inhalt:
+                    <textarea name="body" id="mail-body" placeholder="Nachricht"></textarea>
+                </label>
+            </div>
+            <div><input type="submit" value="Erstelle Email" id="submit"></div>
+        </form>
+    </div>
 </body>
 </html>

@@ -1,0 +1,124 @@
+.container{
+    text-align: center;
+    font-size: 2.5vh;
+}
+h2{
+    margin-bottom: 3%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#subject{
+    font-family: "Dm Mono", monospace;
+    font-weight: 300;
+    color: #dad2e2;
+    font-size: 1.61803399vh;
+    padding: 5px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #dad2e2;
+    color: #dad2e2;
+    width: 25%;
+    transition: border 0.35s linear;
+    margin-bottom: 2.5%;
+}
+#subject:focus{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #a45ee6;
+}
+#mail-body{
+    vertical-align: middle;
+    font-family: "Dm Mono", monospace;
+    font-weight: 300;
+    color: #dad2e2;
+    font-size: 1.61803399vh;
+    resize: none;
+    padding: 5px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #dad2e2;
+    color: #dad2e2;
+    width: 40%;
+    transition: border 0.35s linear;
+    height: 5.3em;
+}
+#mail-body:focus{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #a45ee6;
+}
+#submit{
+    margin-top: 4%;
+    margin-bottom: 3%;
+    padding: 15px;
+    background: none;
+    font-family: "Dm Mono", monospace;
+    font-weight: 300;
+    color: #dad2e2;
+    font-size: 1.61803399vh;
+    border-radius: 15px;
+    border: solid 4px #caa8ec;
+}
+#submit:hover{
+    cursor: pointer;
+    border: solid 4px #a45ee6;
+}
+
+/* media-queries */
+@media(max-width: 540px){
+    body h1{
+        font-size: 5vh;
+    }
+    .container h2{
+        font-size: 2.5vh;
+        margin-bottom: 10%;
+    }
+    #subject, #mail-body{
+        margin-bottom: 5%;
+    }
+}
+@media(max-width: 605px){
+    h2{
+        font-size: 3vh;
+    }
+    .container #subject{
+        width: 50%;
+    }
+    .container #mail-body{
+        width: 70%;
+    }
+}
+@media(max-width: 1000px){
+    h1{
+        font-size: 7.5vh;
+    }
+    #subject, #mail-body{
+        position: relative;
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 1%;
+    }
+    #subject{
+        width: 40%;
+    }
+    #mail-body{
+        width: 60%;
+    }
+}
+@media(max-height: 650px) and (orientation: landscape){
+    html, body{
+        text-shadow: none;
+    }
+    #subject, #mail-body, label{
+        font-size: 3vh;
+    }
+    #submit{
+        border: solid 2px #caa8ec;
+        padding: 7px;
+        font-size: 3vh;
+    }
+    #submit:hover{
+        border: solid 2px #a45ee6;
+    }
+}

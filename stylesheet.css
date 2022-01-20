@@ -130,7 +130,7 @@ html, body{
     from {background-size:0 100%}
 }
 
-/* Change with device size */
+/* media-queries */
 @media (max-width: 525px){
     .container{
         font-size: 4.5vh;

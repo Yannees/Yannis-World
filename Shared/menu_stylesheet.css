@@ -70,7 +70,6 @@ html, body {
     margin-right: 15%;
     visibility: hidden;
     opacity: 0;
-    transition: all 0.4s linear;
 }
 .menu ul li{
     margin-bottom: 7vh;
@@ -149,7 +148,7 @@ html, body {
     }
 }
 
-/* Change with device size */
+/* media-queries */
 @media (max-width: 525px){
     .menu ul li a{
         font-size: 4.5vh;
@@ -157,5 +156,13 @@ html, body {
     }
     .menu ul li a:hover{
         text-shadow: 0px 2px #d499ff, 0px -2px #4e385d;
+    }
+}
+@media(max-height: 650px) and (orientation: landscape){
+    .menu ul li a{
+        text-shadow: none;
+    }
+    .menu ul li a:hover{
+        text-shadow: none;
     }
 }
