@@ -1,12 +1,19 @@
+:root{
+    --bg-color: #000a11;
+    --main-color: #a45ee6;
+    --text-color: #dad2e2;
+    --shadow-color: #caa8ec;
+}
+
 /* Body */
 html, body {
-    background-color: #000a11;
+    background-color: var(--bg-color);
     font-family: "Dm Mono", monospace;
     font-weight: 300;
-    color: #dad2e2;
-    text-shadow: -1px 1px #caa8ec;
+    color: var(--text-color);
+    text-shadow: -1px 1px var(--shadow-color);
     scrollbar-width: thin;
-    scrollbar-color: #6d6d6d #000a11;
+    scrollbar-color: #6d6d6d var(--bg-color);
     max-width: 100%;
     overflow-x: hidden;
     height:auto!important;
@@ -15,12 +22,12 @@ body::-webkit-scrollbar {
     width: 11px;
 }
 body::-webkit-scrollbar-track {
-    background: #000a11;
+    background: var(--bg-color);
 }
 body::-webkit-scrollbar-thumb {
     background-color: #6d6d6d;
     border-radius: 6px;
-    border: 3px solid #000a11;
+    border: 3px solid var(--bg-color);
 }
 
 /* Site */
@@ -31,21 +38,21 @@ body::-webkit-scrollbar-thumb {
     height: 15%;
     width: 100%;
     border-bottom-left-radius: 100%;
-    background: #a45ee6;
+    background: var(--main-color);
 }
 h1{
     width: 100%;
     text-align: center;
     position: relative;
-    color: #dad2e2;
+    color: var(--text-color);
     left: 50%;
     transform: translateX(-50%);
     margin-top: 21.2vh;
     font-size: 10vh;
     font-family: "Dm Mono", monospace;
     font-weight: 500;
-    text-decoration: underline #a45ee6;
-    text-shadow: -2px 2px #caa8ec;
+    text-decoration: underline var(--main-color);
+    text-shadow: -2px 2px var(--shadow-color);
     letter-spacing: 1vw;
     transition: all 0.2s;
     display: block;

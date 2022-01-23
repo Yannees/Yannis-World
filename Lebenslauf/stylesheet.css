@@ -70,10 +70,15 @@ table th,table td{
 table th{
     letter-spacing: .1em;
     padding-top: 2.5%;
-    text-decoration: underline #a45ee6 3px;
+    text-decoration: underline var(--main-color) 3px;
 }
 
 /* media-queries */
+@media(max-width: 500px){
+    body h1{
+        font-size: 5vh;
+    }
+}
 @media(max-width: 870px){
     h1{
         font-size: 7.5vh;

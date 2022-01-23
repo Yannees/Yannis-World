@@ -1,3 +1,6 @@
+:root{
+    --bg-color:  #000a11;
+}
 /* General */
 html, body{
     overflow: hidden;
@@ -52,7 +55,7 @@ html, body{
     left: 101%;
     top:50%;
     transform: translateY(-50%);
-    color: #000a11;
+    color: var(--bg-color);
     font-family: "Dm Mono", monospace;
     font-size: 4vh;
     visibility: hidden;
@@ -77,8 +80,8 @@ html, body{
 .text{
     color: #00000000;
     background:
-        linear-gradient(-90deg, #000a11 5px, #00000000 0) 10px 0,
-        linear-gradient(#000a11 0 0) 0 0;
+        linear-gradient(-90deg, var(--bg-color) 5px, #00000000 0) 10px 0,
+        linear-gradient(var(--bg-color) 0 0) 0 0;
     background-size: calc(var(--n)*1ch) 100%;
     -webkit-background-clip: padding-box, text;
     background-clip: padding-box, text;
@@ -156,7 +159,7 @@ html, body{
         transition: all 1s linear;
     }
     .text{
-        color: #000a11;
+        color: var(--bg-color);
         background: none;
         animation: none;
     }

@@ -10,13 +10,13 @@ h2{
 #subject{
     font-family: "Dm Mono", monospace;
     font-weight: 300;
-    color: #dad2e2;
+    color: var(--text-color);
     font-size: 1.61803399vh;
     padding: 5px;
     background: none;
     border: none;
-    border-bottom: 2px solid #dad2e2;
-    color: #dad2e2;
+    border-bottom: 2px solid var(--text-color);
+    color: var(--text-color);
     width: 25%;
     transition: border 0.35s linear;
     margin-bottom: 2.5%;
@@ -24,20 +24,20 @@ h2{
 #subject:focus{
     border: none;
     outline: none;
-    border-bottom: 2px solid #a45ee6;
+    border-bottom: 2px solid var(--main-color);
 }
 #mail-body{
     vertical-align: middle;
     font-family: "Dm Mono", monospace;
     font-weight: 300;
-    color: #dad2e2;
+    color: var(--text-color);
     font-size: 1.61803399vh;
     resize: none;
     padding: 5px;
     background: none;
     border: none;
-    border-bottom: 2px solid #dad2e2;
-    color: #dad2e2;
+    border-bottom: 2px solid var(--text-color);
+    color: var(--text-color);
     width: 40%;
     transition: border 0.35s linear;
     height: 5.3em;
@@ -45,7 +45,7 @@ h2{
 #mail-body:focus{
     border: none;
     outline: none;
-    border-bottom: 2px solid #a45ee6;
+    border-bottom: 2px solid var(--main-color);
 }
 #submit{
     margin-top: 4%;
@@ -54,14 +54,14 @@ h2{
     background: none;
     font-family: "Dm Mono", monospace;
     font-weight: 300;
-    color: #dad2e2;
+    color: var(--text-color);
     font-size: 1.61803399vh;
     border-radius: 15px;
-    border: solid 4px #caa8ec;
+    border: solid 4px var(--shadow-color);
 }
 #submit:hover{
     cursor: pointer;
-    border: solid 4px #a45ee6;
+    border: solid 4px var(--main-color);
 }
 
 /* media-queries */
@@ -114,11 +114,11 @@ h2{
         font-size: 3vh;
     }
     #submit{
-        border: solid 2px #caa8ec;
+        border: solid 2px var(--shadow-color);
         padding: 7px;
         font-size: 3vh;
     }
     #submit:hover{
-        border: solid 2px #a45ee6;
+        border: solid 2px var(--main-color);
     }
 }

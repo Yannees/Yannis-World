@@ -67,16 +67,16 @@
     left: -4.5%;
     text-decoration: none;
     text-shadow: none;
-    color: #caa8ec;
+    color: var(--shadow-color);
     font-size: 3vh;
     font-weight: 500;
     padding: 5px;
     font-style: italic;
-    border: solid 4px #caa8ec;
+    border: solid 4px var(--shadow-color);
     border-radius: 15px;
 }
 .resume a:hover{
-    border: solid 4px #a45ee6;
+    border: solid 4px var(--main-color);
 }
 
 /* media-queries */
@@ -123,7 +123,7 @@
         text-shadow: none;
     }
     .container .resume a{
-        border: solid 2px #caa8ec;
+        border: solid 2px var(--shadow-color);
     }
 }
 
