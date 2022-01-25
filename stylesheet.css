@@ -134,17 +134,17 @@ html, body{
 }
 
 /* media-queries */
-@media (max-width: 525px){
+@media(max-width: 525px){
     .container{
         font-size: 4.5vh;
     }
 }
-@media (max-width: 1250px){
+@media(max-width: 1250px){
     .container{
         right: 25%;
     }
 }
-@supports (-webkit-touch-callout: none) {
+@supports(-webkit-touch-callout: none) {
     .container{
         position: absolute;
         left: 109%;
@@ -169,6 +169,7 @@ html, body{
         animation: none;
     }
 }
+
 /* Extra menu */
 #oc_menu{
     display: none;

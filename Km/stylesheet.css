@@ -11,7 +11,7 @@ h2{
     font-family: "Dm Mono", monospace;
     font-weight: 300;
     color: var(--text-color);
-    font-size: 1.61803399vh;
+    font-size: 2vh;
     padding: 5px;
     background: none;
     border: none;
@@ -31,7 +31,7 @@ h2{
     font-family: "Dm Mono", monospace;
     font-weight: 300;
     color: var(--text-color);
-    font-size: 1.61803399vh;
+    font-size: 2vh;
     resize: none;
     padding: 5px;
     background: none;
@@ -55,7 +55,7 @@ h2{
     font-family: "Dm Mono", monospace;
     font-weight: 300;
     color: var(--text-color);
-    font-size: 1.61803399vh;
+    font-size: 2.5vh;
     border-radius: 15px;
     border: solid 4px var(--shadow-color);
 }
@@ -86,6 +86,9 @@ h2{
     }
     .container #mail-body{
         width: 70%;
+    }
+    #submit{
+        margin-top: 12.5%;
     }
 }
 @media(max-width: 1000px){

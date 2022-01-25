@@ -6,7 +6,7 @@
 }
 
 /* Body */
-html, body {
+html, body{
     background-color: var(--bg-color);
     font-family: "Dm Mono", monospace;
     font-weight: 300;
@@ -64,12 +64,20 @@ h1{
 }
 
 /* media-queries */
-@media (max-width: 605px){
+@media(max-width: 605px){
     h1{
         font-size: 6vh;
         margin-top: 18vh;
     }
     .container{
         text-shadow: none;
+    }
+}
+@media screen and (max-width: 667px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        max-width: 100% !important;
     }
 }
