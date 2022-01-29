@@ -11,17 +11,20 @@
 .menu ul{
     animation: hide_ul 0.4s linear;
 }
-.menu .menu_bg #block_1{
-    animation: move_block1 0.75s linear;
+.menu .menu_bg span{
+    animation: move_blocks 0.25s linear backwards;
 }
-.menu .menu_bg #block_2{
-    animation: move_block2 1s linear;
+.menu .menu_bg span:nth-child(1){
+    animation-delay: 0.5s;
 }
-.menu .menu_bg #block_3{
-    animation: move_block3 1.25s linear;
+.menu .menu_bg span:nth-child(2){
+    animation-delay: 0.75s;
 }
-.menu .menu_bg #block_4{
-    animation: move_block4 1.5s linear;
+.menu .menu_bg span:nth-child(3){
+    animation-delay: 1s;
+}
+.menu .menu_bg span:nth-child(4){
+    animation-delay: 1.25s;
 }
 
 /* Animations */
@@ -53,23 +56,7 @@
         opacity: 0;
     }
 }
-@keyframes move_block1{
+@keyframes move_blocks{
     0%{top: 100%;}
-    66.66666%{top: 100%;}
-    100%{top: 0;}
-}
-@keyframes move_block2{
-    0%{top: 100%;}
-    75%{top: 100%;}
-    100%{top: 0;}
-}
-@keyframes move_block3{
-    0%{top: 100%;}
-    80%{top: 100%;}
-    100%{top: 0;}
-}
-@keyframes move_block4{
-    0%{top: 100%;}
-    83.33333%{top: 100%;}
     100%{top: 0;}
 }

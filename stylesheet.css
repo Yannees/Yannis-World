@@ -4,38 +4,38 @@
 /* General */
 html, body{
     overflow: hidden;
+    background-color: var(--bg-color);
 }
 #change{
     display: none;
 }
 /* Start */
-#background{
+#side_waves{
     top: 0;
     left: 0;
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: -1;
     pointer-events: none;
     user-select: none;
-    transition: all 1s linear;
+    transition: all 1s ease-in-out;
 }
 #to_main{
     position: absolute;
-    margin-right: 20%;
+    margin-right: 22%;
     left: 15%;
     top:50%;
     transform: translateY(-50%);
     color: #ffffff;
     font-family: Futura, monaco, monospace;
     font-size: 9vh;
-    transition: all 1s linear
+    transition: all 1s ease-in-out
 }
 #to_main:hover{
     font-size: 10vh;
     text-decoration: underline;
     cursor: pointer;
-    transition: all 0.25s linear;
+    transition: all 0.25s ease-in-out;
     margin-left: -1.5%;
 }
 /* Main */
@@ -48,7 +48,7 @@ html, body{
     z-index: -1;
     pointer-events: none;
     user-select: none;
-    transition: all 1s linear;
+    transition: all 1s ease-in-out;
 }
 #to_start{
     position: absolute;
@@ -60,7 +60,7 @@ html, body{
     font-size: 4vh;
     visibility: hidden;
     opacity: 0;
-    transition: all 1s linear;
+    transition: all 1s ease-in-out;
 }
 #to_start:hover{
     cursor: pointer;
@@ -93,18 +93,18 @@ html, body{
 #change:checked ~ #to_main{
     left: -85%;
     margin-right: 120%;
-    transition: all 1s linear;
+    transition: all 1s ease-in-out;
 }
-#change:checked ~ #background{
+#change:checked ~ #side_waves{
     left: -100%;
-    animation: move_old_bg 1s linear;
+    animation: move_old_bg 1s ease-in-out;
 }
 #change:checked ~ #new_background{
     right: 0;
-    animation: move_new_bg 1s linear;
+    animation: move_new_bg 1s ease-in-out;
 }
 #change:checked ~ .container{
-    animation: show_text 2s linear;
+    animation: show_text 2s ease-in-out;
     display: unset;
     visibility: visible;
 }
@@ -112,7 +112,7 @@ html, body{
     visibility: visible;
     opacity: 100%;
     left: 1%;
-    transition: all 1s linear;
+    transition: all 1s ease-in-out;
 }
 
 /* Animations */
@@ -156,7 +156,7 @@ html, body{
         font-size: 7vh;
         display: unset;
         visibility: visible;
-        transition: all 1s linear;
+        transition: all 1s ease-in-out;
     }
     .text{
         color: var(--bg-color);

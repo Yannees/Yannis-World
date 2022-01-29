@@ -1,0 +1,43 @@
+:root{
+    --wrap: nowrap;
+}
+
+/* fall-back animation */
+#to_main{
+    animation: show_tm 0.75s linear 0.45s backwards;
+}
+
+@keyframes show_tm{
+    0%{top: -9vh;}
+    100%{top: 50%;}
+}
+
+/* go-to animation */
+@media(min-aspect-ratio: 1/2){
+    #side_waves{
+        animation: del_z_index 1s forwards;
+    }
+    #to_main{
+        animation: slide_tm 1s ease-out 0.45s backwards;
+    }
+
+    @keyframes del_z_index{
+        0%{z-index: 1;}
+        99.999%{z-index: 1;}
+        100%{z-index: 0;}
+    }
+    @keyframes slide_tm{
+        0%{
+            left: 100%;
+            white-space: var(--wrap);
+        }
+        100%{
+            white-space: var(--wrap);
+        }
+    }
+}
+@media(max-aspect-ratio: 411/401){
+    :root{
+        --wrap: normal;
+    }
+}
