@@ -1,26 +1,4 @@
-/* some extra things */
-#check_menu:not(:checked) ~ .tex_ocm{
-    animation: hide_ocm 1.5s linear;
-}
-@keyframes hide_ocm{
-    0%{
-        position: fixed;
-        right: 2%;
-        opacity: 1;
-    }
-    95%{
-        position: fixed;
-        right: 2%;
-        opacity: 1;
-    }
-    100%{
-        position: fixed;
-        right: 2%;
-        opacity: 0;
-    }
-}
-
-/* site */
+/* Site */
 .picture{
     position: absolute;
     top: 17%;
@@ -49,9 +27,7 @@ table{
     text-align: left;
     position: relative;
     list-style-type: none;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
+    margin: 5%;
     font-size: 3vh;
     border-spacing: 100px 8px;
     border-collapse: collapse;

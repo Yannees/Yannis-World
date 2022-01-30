@@ -1,7 +1,7 @@
+/* General */
 :root{
     --bg-color:  #000a11;
 }
-/* General */
 html, body{
     overflow: hidden;
     background-color: var(--bg-color);
@@ -9,6 +9,7 @@ html, body{
 #change{
     display: none;
 }
+
 /* Start */
 #side_waves{
     top: 0;
@@ -38,6 +39,7 @@ html, body{
     transition: all 0.25s ease-in-out;
     margin-left: -1.5%;
 }
+
 /* Main */
 #new_background{
     top: 0;
@@ -89,6 +91,7 @@ html, body{
     animation: type calc(var(--n)*.1s) steps(var(--n)) forwards;
     animation-delay: 1.5s;
 }
+
 /* Change */
 #change:checked ~ #to_main{
     left: -85%;

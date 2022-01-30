@@ -1,11 +1,10 @@
+/* General */
 :root{
     --bg-color: #000a11;
     --main-color: #a45ee6;
     --text-color: #dad2e2;
     --shadow-color: #caa8ec;
 }
-
-/* Body */
 html, body{
     background-color: var(--bg-color);
     font-family: "Dm Mono", monospace;
@@ -79,5 +78,27 @@ h1{
     }
     .container {
         max-width: 100% !important;
+    }
+}
+
+/* just some scroll fixes */
+#check_menu:not(:checked) ~ .tex_ocm{
+    animation: hide_ocm 1.5s linear;
+}
+@keyframes hide_ocm{
+    0%{
+        position: fixed;
+        right: 2%;
+        opacity: 1;
+    }
+    95%{
+        position: fixed;
+        right: 2%;
+        opacity: 1;
+    }
+    100%{
+        position: fixed;
+        right: 2%;
+        opacity: 0;
     }
 }

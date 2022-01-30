@@ -1,3 +1,4 @@
+/* General */
 :root{
     --menu-color: #b57edc;
     --link-color: #644777;
@@ -135,7 +136,6 @@ html, body {
     opacity: 1;
     animation: show_mp 1s linear 1s backwards;
 }
-
 
 /* Animations */
 @keyframes show_mp{
