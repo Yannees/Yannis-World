@@ -63,6 +63,18 @@ h2{
         grid-template-columns: repeat(auto-fit, minmax(200px, 0.95fr));
     }
 }
+@media(max-width: 1000px) and (orientation: landscape){
+    .container{
+        margin: 10%;
+        width: 80%;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 0.95fr));
+        grid-auto-rows: 20em;
+    }
+    .content p{
+        font-size: 3vh;
+        text-shadow: none;
+    }
+}
 @media(max-width: 605px){
     p{
         text-shadow: none;

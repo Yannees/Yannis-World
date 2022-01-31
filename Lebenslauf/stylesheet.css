@@ -52,7 +52,7 @@ table th{
         font-size: 5vh;
     }
 }
-@media(max-width: 870px){
+@media(max-width: 870px) and (orientation: portrait){
     h1{
         font-size: 7.5vh;
     }

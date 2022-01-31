@@ -16,7 +16,7 @@
 /* go-to animation */
 @media(min-aspect-ratio: 1/2){
     #side_waves{
-        animation: del_z_index 1s forwards;
+        animation: del_z_index 10.45s forwards;
     }
     #to_main{
         animation: slide_tm 1s ease-out 0.45s backwards;
